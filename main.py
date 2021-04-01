@@ -53,7 +53,7 @@ def setup():
 def calculate_sleep_time(to_hour):
     current_hour = datetime.datetime.now().hour
     diff = abs(current_hour - to_hour)
-    if to_hour <= current_hour:
+    if to_hour < current_hour:
         diff = 24 - diff
     sleep_time = to_seconds(diff)
     print 'Current hour', current_hour
