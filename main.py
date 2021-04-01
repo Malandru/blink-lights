@@ -23,7 +23,7 @@ def main():
 
     try:
         blink()
-    except:
+    except KeyboardInterrupt:
         print 'Shutting down program...'
         turn_off()
         print 'Done!'
