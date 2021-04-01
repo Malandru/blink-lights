@@ -7,4 +7,4 @@ process_name="blink-lights"
 
 
 echo "initializing $process_name at: $NOW"
-python $workpath/$process_execution --on 19 --of 22
+python $workpath/$process_execution --on 19 --of 22 > $workpath/$process_name.log
