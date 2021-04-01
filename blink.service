@@ -1,0 +1,14 @@
+[Unit]
+Description=Blink lights service
+After=ssh.service
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/home/pi/blink-lights/start_blinking.sh
+User=pi
+Type=simple
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
