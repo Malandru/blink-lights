@@ -19,9 +19,9 @@ def main():
     # Sleep 1 second or the hours until off
     print 'First sleep of:', sleep_time
     print '_____________________________'
-    time.sleep(sleep_time)
 
     try:
+        time.sleep(sleep_time)
         blink()
     except KeyboardInterrupt:
         print 'Shutting down program...'
