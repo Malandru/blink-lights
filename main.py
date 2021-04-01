@@ -21,6 +21,15 @@ def main():
     print '_____________________________'
     time.sleep(sleep_time)
 
+    try:
+        blink()
+    except:
+        print 'Shutting down program...'
+        turn_off()
+        print 'Done!'
+
+
+def blink():
     print 'Blinking...'
     while True:
         turn_off()
